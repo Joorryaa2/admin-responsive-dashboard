@@ -1,0 +1,1212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="stylesheet" href="../Css/SideBar.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Include ApexCharts library -->
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/apexcharts/dist/apexcharts.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+
+    <script src="/path/to/cdn/jquery.min.js"></script>
+    <script src="animated-counter-prograssbar.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <title>Classera</title>
+</head>
+
+<body>
+
+
+
+
+    <!-- siderbar -->
+
+    <nav class="sidebar  ">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <img src="../image/logo.png" alt="logo">
+                </span>
+
+                <div class="text header-text">
+                    <span class="name"> Classera</span>
+                    <!-- <span class="profession">CoddidgLab</span> -->
+                </div>
+            </div>
+
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="#" onclick="showContent('dashboard')">
+                            <i class='bx bx-home-alt icon'> </i>
+                            <span class="text nav-text">Dashboard</span>
+
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#" onclick="showContent('tickets')">
+                            <i class='bx bx-message-square-check icon'></i>
+                            <span class="text nav-text">Tickets</span>
+
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#" >
+                            <i class='bx bx-user icon'></i>
+                            <span class="text nav-text">Customers</span>
+
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-buildings icon'></i>
+                            <span class="text nav-text">Organizations</span>
+
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-bar-chart-alt-2 icon'></i>
+                            <span class="text nav-text">Reporting</span>
+
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-cog icon'></i>
+                            <span class="text nav-text">Settings</span>
+
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="bottom-content">
+
+                <li class="">
+                    <a href="#">
+                        <i class='bx bx-message-square-dots icon'></i>
+                        <span class="text nav-text">sera</span>
+
+                    </a>
+                </li>
+
+                <li class="mode">
+                    <div class="moon-sun">
+                        <i class='bx bx-moon icon moon'></i>
+                        <i class='bx bx-sun icon sun'></i>
+
+                    </div>
+
+                    <span class="mode-text text">Dark Mode</span>
+                    <div class="toggle-switch">
+                        <span class="switch">
+
+                        </span>
+                    </div>
+                </li>
+
+            </div>
+        </div>
+
+    </nav>
+
+
+    <!-- finsh siderbar -->
+
+
+
+    <!-- header -->
+
+    <!-- search bar -->
+    <nav class="header-nav">
+
+        <div class="search-bar">
+            <input class="input" type="text" placeholder="Search...">
+            <i class='bx bx-search-alt-2 icon'></i>
+
+        </div>
+
+        <!-- finsh search bar -->
+
+
+
+        <!-- profile bar -->
+
+        <div class="profile_Bar">
+
+            <i class='bx bx-envelope icon'></i>
+            <i class='bx bx-bell icon'></i>
+            <div class="vertical-line icon"></div>
+            <div class="profile-img">
+                <img src="../image/images.jpg" alt="n">
+                <i class='bx bxs-chevron-down arrow-icon icon'></i>
+            </div>
+
+
+
+        </div>
+
+
+    </nav>
+
+
+
+    <!-- Content Sections -->
+
+    <!-- Dashboard -->
+
+    <div id="dashboard" class="content-section">
+
+
+
+        <!-- the top divs -->
+        <div class="total_top_div">
+
+            <div class="total_tickets Total">
+                <p class="title">Total Tickets</p>
+
+                <div class="icon_number-div">
+                    <div class="icon-container">
+                        <i class='bx bxs-message-square-check icon1 '></i>
+                    </div>
+                    <p class="number">17,825</p>
+                </div>
+                <div class="additional-info">
+                    <p> <i class='bx bx-up-arrow-alt i1'>7.2% </i>than last day</p>
+                </div>
+                <i class='bx bx-chevron-right i2'></i>
+
+
+            </div>
+
+            <div class="total_interactions Total">
+
+                <p class="title">Total Interactions</p>
+
+                <div class="icon_number-div">
+                    <div class="icon-container">
+                        <i class='bx bxs-chat icon1 '></i>
+                    </div>
+                    <p class="number">785,021</p>
+                </div>
+                <div class="additional-info">
+                    <p> <i class='bx bx-up-arrow-alt i1'>12.2% </i>than last day</p>
+                </div>
+                <i class='bx bx-chevron-right i2'></i>
+
+
+            </div>
+
+            <div class="total_users Total">
+
+                <p class="title">Total Users</p>
+
+                <div class="icon_number-div">
+                    <div class="icon-container">
+                        <i class='bx bxs-user icon1 '></i>
+                    </div>
+                    <p class="number">8,482</p>
+                </div>
+                <div class="additional-info">
+                    <p> <i class='bx bx-down-arrow-alt i1' style="color: red;">10.2% </i>than last day</p>
+                </div>
+                <i class='bx bx-chevron-right i2'></i>
+
+            </div>
+
+            <div class="total_groups Total">
+
+                <p class="title">Total Groups</p>
+
+                <div class="icon_number-div">
+                    <div class="icon-container">
+                        <i class='bx bxs-group icon1 '></i>
+                    </div>
+                    <p class="number">1,420</p>
+                </div>
+                <div class="additional-info">
+                    <p> <i class='bx bx-up-arrow-alt i1'>3.2% </i>than last day</p>
+                </div>
+                <i class='bx bx-chevron-right i2'></i>
+            </div>
+
+
+
+
+        </div>
+
+        <!-- end divs -->
+
+
+        <div class="secondDivs">
+
+            <!-- Chart container with vertical and horizontal labels -->
+            <div class="chart-container ">
+                <div class="vertical-labels">
+
+
+                </div>
+                <div class="horizontal-labels">
+
+                </div>
+                <!-- Placeholder for the chart -->
+                <div id="line-chart"></div>
+            </div>
+
+            <!-- end of the chart  -->
+
+
+
+
+
+
+            <!-- overall rating -->
+
+            <div class="rating-container">
+
+                <p class="title"> Overall Rating</p>
+
+                <div class="rating-div">
+                    <p class="number">4.8<span>/5</span> </p>
+                    <div class="stars">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                    </div>
+                    <p class="sec-title">Rating Ratio</p>
+
+                    <div class="line-container">
+
+                        <div class="progressbar-item">
+
+                            <div progress-bar data-percentage="33">
+                                <div class="progress-number">
+                                    <div class="progress-number-mark">
+                                        <span class="percent"></span>
+                                        <span class="down-arrow"></span>
+                                    </div>
+                                </div>
+                                <div class="progress-bg">
+                                    <div class="progress-fill"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+                </div>
+
+
+            </div>
+
+
+            <!-- finsh the rating div -->
+
+
+            <!-- Attchment detalis div  -->
+
+            <div class="attachment_detalis-container">
+                <p class="title"> Attachments Details</p>
+                <div id="pie-chart"></div>
+                <div class="data-div">
+
+                    <div><i class='bx bxs-file-doc doc1'></i>
+
+                        <div class="files-div">
+                            <p>Documents Files</p>
+                            <p>1,225</p>
+                        </div>
+                        <p>1.3GB</p>
+
+                    </div>
+                    <div><i class='bx bxs-file-image img1'></i>
+                        <div class="files-div">
+                            <p>Image Files</p>
+                            <p>1,8449</p>
+                        </div>
+                        <p>7.3GB</p>
+                    </div>
+                    <div><i class='bx bxs-user-voice voice'></i>
+                        <div class="files-div">
+                            <p>Voices Files</p>
+                            <p>1,005</p>
+                        </div>
+                        <p>4.1GB</p>
+                    </div>
+                    <div><i class='bx bxs-videos video'></i>
+                        <div class="files-div">
+                            <p>Vidoes Files</p>
+                            <p>723</p>
+                        </div>
+                        <p>1.3GB</p>
+                    </div>
+                </div>
+            </div>
+            <!-- last section  -->
+            <div class="last-div">
+
+                <div class="respnseTimeDiv">
+                    <!-- <p class="title"> Response & Resolution Time</p> -->
+
+                    <div id="Bar_Chart"></div>
+
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+    <div id="tickets" class="content-section" style="display: none;"> <!-- Add ID to the content section -->
+
+        <!-- icons -->
+        <div class="ticket_icon_div">
+            <i class='bx bx-home-alt icon'></i>
+            <i class='bx bx-chevron-right icon'></i>
+            <span> Tickets</span>
+        </div>
+
+
+        <!-- buttons -->
+        <div class="Ticket_title_div">
+            <span>Tickets</span>
+            <div class="buttons_div">
+                <button class="Export_button">
+                    <i class='bx bx-cloud-upload '></i> Export
+                </button>
+
+        
+
+                <a href="#" onclick="showContent('add-ticket-section')" style="text-decoration: none;">
+                    <button id="addTicketButton" class="add_tickets_button">
+                        <i class='bx bx-plus'></i> Add Ticket
+                    </button>
+
+                </a>
+            </div>
+        </div>
+
+        <!-- nav bar  -->
+        <div class="navbar">
+            <a href="#" class="nav-item selected" data-content="overview">Overview</a>
+            <a href="#" class="nav-item" data-content="development">Development</a>
+            <a href="#" class="nav-item" data-content="new-feature">New Feature</a>
+            <a href="#" class="nav-item" data-content="faq">FAQ</a>
+        </div>
+
+        <div class="underline"></div>
+
+        <!-- finsh nav bar  -->
+
+        <!-- overview content -->
+        <div id="overview-content" class="content" style="display: block;">
+
+
+            <!-- audio divs  -->
+            <div class="audio_divs">
+
+                <div class="open_div total_audio_div">
+
+                    <div class="name_number">
+
+                        <span> Open</span>
+                        <span class="number_span"> 7 </span>
+
+                    </div>
+
+                    <div class="container">
+                        <div class="item item1"></div>
+                        <div class="item item2"></div>
+                        <div class="item item3"></div>
+                        <div class="item item4"></div>
+                        <div class="item item5"></div>
+                    </div>
+
+                </div>
+                <div class="inProgress_div total_audio_div">
+
+                    <div class="name_number sec">
+
+                        <span> In Progress</span>
+                        <span class="number_span"> 15 </span>
+
+                    </div>
+
+                    <div class="container">
+                        <div class="item item1 sec_"></div>
+                        <div class="item item2 sec_"></div>
+                        <div class="item item3 sec_"></div>
+                        <div class="item item4 sec_"></div>
+                        <div class="item item5 sec_"></div>
+                    </div>
+
+
+                </div>
+                <div class="inPending_div total_audio_div">
+
+                    <div class="name_number thir">
+
+                        <span> Pending</span>
+                        <span class="number_span"> 44 </span>
+
+                    </div>
+
+                    <div class="container">
+                        <div class="item item1 thir_"></div>
+                        <div class="item item2 thir_"></div>
+                        <div class="item item3 thir_"></div>
+                        <div class="item item4 thir_"></div>
+                        <div class="item item5 thir_"></div>
+                    </div>
+
+
+                </div>
+                <div class="resolved_div total_audio_div">
+
+                    <div class="name_number four">
+
+                        <span> Resolved</span>
+                        <span class="number_span"> 4205 </span>
+
+                    </div>
+
+                    <div class="container">
+                        <div class="item item1 four_"></div>
+                        <div class="item item2 four_"></div>
+                        <div class="item item3 four_"></div>
+                        <div class="item item4 four_"></div>
+                        <div class="item item5 four_"></div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- finsh the audio divs  -->
+
+            <!-- filter and search  -->
+            <div class="filter_search">
+
+                <button class="Export_button">
+                    <i class='bx bx-filter'></i> Filters
+                </button>
+
+                <div class="search-bar input2">
+                    <input class="input input2" type="text" placeholder="Search in table...">
+                    <i class='bx bx-search-alt-2 icon'></i>
+
+                </div>
+
+            </div>
+
+            <!-- finsh filter and search  -->
+
+
+            <!-- table  -->
+
+
+
+            <main>
+                <table>
+                    <thead>
+                        <tr>
+                            <th id="Id_">ID</th>
+                            <th>Brand</th>
+                            <th>Requester</th>
+                            <th>Assignee</th>
+                            <th>Status</th>
+                            <th>Interactions</th>
+                            <th>Responsiveness</th>
+                            <th id="date_">Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>225125</td>
+                            <td>
+                                <div class="brand_div">
+                                    <img class="brand" src="../image/classera_permium.jpg" alt="nothing">
+                                    <div class="inside_brand_div">
+                                        <p>LMS</p>
+                                        <p class="subtitle">Reports</p>
+
+                                    </div>
+                            </td>
+                            <td>
+
+                                <div class="req_profile">
+                                    <img src="../image/mohmmed_alshwami.jpg" alt="">
+                                    <div class="name_job_section">
+                                        <p class="name">Mohammad Ashmawi</p>
+                                        <p class="job">CTO at classera</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="req_profile">
+                                    <img src="../image/Huthifa.jpg" alt="">
+                                    <div class="name_job_section">
+                                        <p class="name">Huthaifa Yousef</p>
+                                        <p class="job">Support team at Classera</p>
+                                    </div>
+
+                                </div>
+                            </td>
+                            <td>
+                                <main>
+                                    <div class="status">
+                                        <i class='bx bxs-circle'></i>
+                                        <p>In Progress</p>
+                                    </div>
+                                </main>
+                            </td>
+                            <td>
+                                <div class="profile-pics">
+                                    <img src="../image/Huthifa.jpg" alt="">
+                                    <img src="../image/mohmmed_alshwami.jpg" alt="">
+                                    <img src="../image/mohmmed_alshwami.jpg" alt="">
+                                    <img src="../image/mohmmed_alshwami.jpg" alt="">
+                                    <img src="../image/+3.png" alt="">
+
+                                </div>
+                            </td>
+                            <td>
+                                <div class="responsive_sec">
+                                    <div class="the_percent_container">
+                                        <div class="the_percent" style="width:30%;"></div>
+                                    </div>
+                                    <p>30%</p>
+                                </div>
+                            </td>
+                            <td>
+                                <p class="date_">Feb 22,2022</p>
+                            </td>
+                        </tr>
+                        <!-- Add more rows as needed -->
+
+
+                        <tr>
+                            <td>225124</td>
+                            <td>
+                                <div class="brand_div">
+                                    <img class="brand" src="../image/cpay.png" alt="nothing">
+                                    <div class="inside_brand_div">
+                                        <p>Cpay</p>
+                                        <p class="subtitle">Payment module</p>
+
+                                    </div>
+                            </td>
+                            <td>
+
+                                <div class="req_profile">
+                                    <img src="../image/Huthifa.jpg" alt="">
+                                    <div class="name_job_section">
+                                        <p class="name">Huthaifa Yousef</p>
+                                        <p class="job">Support team at Classera</p>
+                                    </div>
+
+                                </div>
+                            </td>
+                            <td>
+                                <div class="req_profile">
+                                    <img src="../image/omar_alhariri.jpg" alt="">
+                                    <div class="name_job_section">
+                                        <p class="name">Omar Alhariri</p>
+                                        <p class="job">Cpay team at classera</p>
+                                    </div>
+
+                                </div>
+                            </td>
+                            <td>
+                                <main>
+                                    <div class="status" style="background-color: rgba(237, 209, 69, 0.468); width: fit-content;
+                                padding: 10px;">
+                                        <i class='bx bxs-circle' style="color: rgb(252, 213, 19);"></i>
+                                        <p style="color: rgb(244, 204, 6);">Pending </p>
+                                    </div>
+                                </main>
+                            </td>
+                            <td>
+                                <div class="profile-pics">
+                                    <img src="../image/omar_alhariri.jpg" alt="">
+                                    <img src="../image/mohmmed_alshwami.jpg" alt="">
+                                    <img src="../image/yurb_ahdum.jpg" alt="">
+                                    <img src="../image/Huthifa.jpg" alt="">
+                                    <img src="../image/+1.png" alt="">
+
+                                </div>
+                            </td>
+                            <td>
+                                <div class="responsive_sec">
+                                    <div class="the_percent_container">
+                                        <div class="the_percent" style="width:93%;"></div>
+                                    </div>
+                                    <p>95%</p>
+                                </div>
+                            </td>
+                            <td>
+                                <p class="date_">Feb 21,2022</p>
+                            </td>
+                        </tr>
+
+
+
+
+                        <tr>
+                            <td>225125</td>
+                            <td>
+                                <div class="brand_div">
+                                    <img class="brand" src="../image/lspace.jpeg" alt="nothing">
+                                    <div class="inside_brand_div">
+                                        <p>LMS</p>
+                                        <p class="subtitle">Courses module</p>
+
+                                    </div>
+                            </td>
+                            <td>
+
+                                <div class="req_profile">
+                                    <img src="../image/yurb_ahdum.jpg" alt="">
+                                    <div class="name_job_section">
+                                        <p class="name">Yarub Ahmed</p>
+                                        <p class="job">Support team at Classera</p>
+                                    </div>
+
+                                </div>
+                            </td>
+                            <td>
+                                <div class="req_profile">
+                                    <img src="../image/mohamed_gohamnman.jpg" alt="">
+                                    <div class="name_job_section">
+                                        <p class="name">Mohammad Gohnaimat</p>
+                                        <p class="job">DevOps team at classera</p>
+                                    </div>
+
+                                </div>
+                            </td>
+                            <td>
+                                <main>
+                                    <div class="status" style="background-color: #3ac18f8a; width: fit-content;
+                                padding: 10px;">
+                                        <i class='bx bxs-circle' style="color: #29b883;"></i>
+                                        <p style="color: #29b883;">Resolved </p>
+                                    </div>
+                                </main>
+                            </td>
+                            <td>
+                                <div class="profile-pics">
+                                    <img src="../image/mohamed_gohamnman.jpg" alt="">
+                                    <img src="../image/mohamed_gohamnman.jpg" alt="">
+                                    <img src="../image/Huthifa.jpg" alt="">
+
+                                </div>
+                            </td>
+                            <td>
+                                <div class="responsive_sec">
+                                    <div class="the_percent_container">
+                                        <div class="the_percent" style="width:90%;"></div>
+                                    </div>
+                                    <p>90%</p>
+                                </div>
+                            </td>
+                            <td>
+                                <p class="date_">Feb 22,2022</p>
+                            </td>
+                        </tr>
+
+
+
+
+
+
+
+                        <tr>
+                            <td>225125</td>
+                            <td>
+                                <div class="brand_div">
+                                    <img class="brand" src="../image/reality.jpg" alt="nothing">
+                                    <div class="inside_brand_div">
+                                        <p>Creality</p>
+                                        <p class="subtitle">Activity module</p>
+
+                                    </div>
+                            </td>
+                            <td>
+
+                                <div class="req_profile">
+                                    <img src="../image/mohmaad_hassan.jpg" alt="">
+                                    <div class="name_job_section">
+                                        <p class="name">Mohammad Hasan</p>
+                                        <p class="job">Markting team at Classera</p>
+                                    </div>
+
+                                </div>
+                            </td>
+                            <td>
+                                <div class="req_profile">
+                                    <img src="../image/mohmmad_obadi.jpg" alt="">
+                                    <div class="name_job_section">
+                                        <p class="name">Mohammad Obaid</p>
+                                        <p class="job">DevOps team at classera</p>
+                                    </div>
+
+                                </div>
+                            </td>
+                            <td>
+                                <main>
+                                    <div class="status" style="background-color: #3ac18f8a; width: fit-content;
+                                padding: 10px;">
+                                        <i class='bx bxs-circle' style="color: #29b883;"></i>
+                                        <p style="color: #29b883;">Resolved </p>
+                                    </div>
+                                </main>
+                            </td>
+                            <td>
+                                <div class="profile-pics">
+                                    <img src="../image/mohmmad_obadi.jpg" alt="">
+                                    <img src="../image/mohmaad_hassan.jpg" alt="">
+                                    <img src="../image/mohmmad_obadi.jpg" alt="">
+                                    <img src="../image/mohmmed_alshwami.jpg" alt="">
+                                    <img src="../image/+5.png" alt="">
+
+                                </div>
+                            </td>
+                            <td>
+                                <div class="responsive_sec">
+                                    <div class="the_percent_container">
+                                        <div class="the_percent" style="width:82%;"></div>
+                                    </div>
+                                    <p>82%</p>
+                                </div>
+                            </td>
+                            <td>
+                                <p class="date_">Feb 22,2022</p>
+                            </td>
+                        </tr>
+
+
+
+
+
+                        <tr>
+                            <td>225125</td>
+                            <td>
+                                <div class="brand_div">
+                                    <img class="brand" src="../image/classera_permium.jpg" alt="nothing">
+                                    <div class="inside_brand_div">
+                                        <p>LMS</p>
+                                        <p class="subtitle">Payment module</p>
+
+                                    </div>
+                            </td>
+                            <td>
+
+                                <div class="req_profile">
+                                    <img src="../image/mohmmed_alshwami.jpg" alt="">
+                                    <div class="name_job_section">
+                                        <p class="name">Mohammad Ashmawi</p>
+                                        <p class="job">CTO at Classera</p>
+                                    </div>
+
+                                </div>
+                            </td>
+                            <td>
+                                <div class="req_profile">
+                                    <img src="../image/mohmmad_tarmmez.jpg" alt="">
+                                    <div class="name_job_section">
+                                        <p class="name">Mohammad Temraz</p>
+                                        <p class="job">Smile team at classera</p>
+                                    </div>
+
+                                </div>
+                            </td>
+                            <td>
+                                <main>
+                                    <div class="status" style="background-color: rgba(237, 209, 69, 0.468); width: fit-content;
+                                padding: 10px;">
+                                        <i class='bx bxs-circle' style="color: rgb(252, 213, 19);"></i>
+                                        <p style="color: rgb(244, 204, 6);">Pending </p>
+                                    </div>
+                                </main>
+                            </td>
+                            <td>
+                                <div class="profile-pics">
+                                    <img src="../image/mohmmad_tarmmez.jpg" alt="">
+                                    <img src="../image/mohamed_gohamnman.jpg" alt="">
+
+
+                                </div>
+                            </td>
+                            <td>
+                                <div class="responsive_sec">
+                                    <div class="the_percent_container">
+                                        <div class="the_percent" style="width:90%;"></div>
+                                    </div>
+                                    <p>90%</p>
+                                </div>
+                            </td>
+                            <td>
+                                <p class="date_">Feb 22,2022</p>
+                            </td>
+                        </tr>
+
+
+
+
+                        <tr>
+                            <td>225125</td>
+                            <td>
+                                <div class="brand_div">
+                                    <img class="brand" src="../image/edumalls.jpeg" alt="nothing">
+                                    <div class="inside_brand_div">
+                                        <p>Edumalls</p>
+                                        <p class="subtitle">Order module</p>
+
+                                    </div>
+                            </td>
+                            <td>
+
+                                <div class="req_profile">
+                                    <img src="../image/yazan_bashar.jpg" alt="">
+                                    <div class="name_job_section">
+                                        <p class="name">Yazan Basheer</p>
+                                        <p class="job">Sales team at Classera</p>
+                                    </div>
+
+                                </div>
+                            </td>
+                            <td>
+                                <div class="req_profile">
+                                    <img src="../image/yurb_ahdum.jpg" alt="">
+                                    <div class="name_job_section">
+                                        <p class="name">Yarub Ahmed</p>
+                                        <p class="job">Support team at classera</p>
+                                    </div>
+
+                                </div>
+                            </td>
+                            <td>
+                                <main>
+                                    <div class="status" style="background-color: #e050507e; width: fit-content;
+                                padding: 10px;">
+                                        <i class='bx bxs-circle' style="color: #dc4949;"></i>
+                                        <p style="color: #dc4949;">Open </p>
+                                    </div>
+                                </main>
+                            </td>
+                            <td>
+                                <div class="profile-pics">
+                                    <img src="../image/mohmaad_hassan.jpg" alt="">
+                                </div>
+                            </td>
+                            <td>
+                                <div class="responsive_sec">
+                                    <div class="the_percent_container">
+                                        <div class="the_percent" style="width:15%;"></div>
+                                    </div>
+                                    <p>15%</p>
+                                </div>
+                            </td>
+                            <td>
+                                <p class="date_">Feb 22,2022</p>
+                            </td>
+                        </tr>
+
+
+
+
+                        <tr>
+                            <td>225125</td>
+                            <td>
+                                <div class="brand_div">
+                                    <img class="brand" src="../image/classera_permium.jpg" alt="nothing">
+                                    <div class="inside_brand_div">
+                                        <p>LMS</p>
+                                        <p class="subtitle">Grades module</p>
+
+                                    </div>
+                            </td>
+                            <td>
+
+                                <div class="req_profile">
+                                    <img src="../image/mohmmed_touq.jpg" alt="">
+                                    <div class="name_job_section">
+                                        <p class="name">Mohammad Touq</p>
+                                        <p class="job">Services team at Classera</p>
+                                    </div>
+
+                                </div>
+                            </td>
+                            <td>
+                                <div class="req_profile">
+                                    <img src="../image/ms.jpg" alt="">
+                                    <div class="name_job_section">
+                                        <p class="name">Mohammad Smairat</p>
+                                        <p class="job">Support team at classera</p>
+                                    </div>
+
+                                </div>
+                            </td>
+                            <td>
+                                <main>
+                                    <div class="status" style="background-color: #3ac18f8a; width: fit-content;
+                                padding: 10px;">
+                                        <i class='bx bxs-circle' style="color: #29b883;"></i>
+                                        <p style="color: #29b883;">Resolved </p>
+                                    </div>
+                                </main>
+                            </td>
+                            <td>
+                                <div class="profile-pics">
+                                    <img src="../image/ms.jpg" alt="">
+                                    <img src="../image/mohmmed_touq.jpg" alt="">
+                                    <img src="../image/ms.jpg" alt="">
+                                    <img src="../image/yurb_ahdum.jpg" alt="">
+                                    <img src="../image/+2.png" alt="">
+                                </div>
+                            </td>
+                            <td>
+                                <div class="responsive_sec">
+                                    <div class="the_percent_container">
+                                        <div class="the_percent" style="width:70%;"></div>
+                                    </div>
+                                    <p>70%</p>
+                                </div>
+                            </td>
+                            <td>
+                                <p class="date_">Feb 22,2022</p>
+                            </td>
+                        </tr>
+
+
+
+                    </tbody>
+
+
+                    <tfoot>
+                        <tr>
+                          <td class="prev-button" scope="row" colspan="2">
+                            <button class="Export_button">
+                               Previous
+                            </button>
+                          </td>
+                          <td class="page-numbers" scope="row" colspan="2">
+                            Page 1 of 50
+                          </td>
+                          <td class="next-button" scope="row" colspan="4">
+                            <div class="prev-position">
+                            <button class="Export_button">
+                                Previous
+                             </button>
+                            </div>
+                          </td>
+    
+                        </tr>
+                      </tfoot>
+                </table>
+            </main>
+
+
+            <!--  finish table  -->
+
+
+
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+        <div id="development-content" class="content" style="display: none;">
+            <!-- Development content goes here -->
+            Development Content
+        </div>
+        <div id="new-feature-content" class="content" style="display: none;">
+            <!-- New Feature content goes here -->
+            New Feature Content
+        </div>
+        <div id="faq-content" class="content" style="display: none;">
+            <!-- FAQ content goes here -->
+            FAQ Content
+        </div>
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div id="add-ticket-section" class="content-section" style="display: none;">
+
+        
+        <!-- add tickt section  -->
+
+
+        
+            <div class="ticket_icon_div">
+                <i class='bx bx-home-alt home-icon'></i>
+                <i class='bx bx-chevron-right icon-right'></i>
+                <span> Tickets</span>
+                <i class='bx bx-chevron-right icon-right'></i>
+                <span> Add ticket</span>
+            </div>
+            <div class="Ticket_title_div">
+                <span>Add ticket</span>
+
+            </div>
+
+            <div class="input-container">
+                <div class="ticket-label">
+                    <p class="in-title">Subject</p>
+                    <p>Title of ticket</p>
+                </div>
+                <div class="ticket-input-section">
+
+                    <input type="text" class="input-text-design">
+                </div>
+
+            </div>
+
+            <div class="horizontal-line"></div>
+
+            <div class="in-textarea">
+                <div class="input-container">
+                    <div class="ticket-label">
+                        <p class="in-title">Description</p>
+                        <p>Detailed description for the ticket</p>
+                    </div>
+                    <div class="ticket-input-section">
+
+                        <textarea rows="8" cols="60" style="resize: none;"></textarea>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="horizontal-line"></div>
+
+            <div class="input-container">
+                <div class="ticket-label">
+                    <p class="in-title">Brand</p>
+                    <p>Product on which issue happen</p>
+                </div>
+                <div class="ticket-input-section">
+
+                    <select class="ticket-select-input" aria-placeholder="Select Product">
+                        <option value="option1" class="option-classera">Learning Managment System</option>
+                        <option value="option2" class="option-edumall">Edumall</option>
+                        <option value="option3" class="option-cspaces">Cspaces</option>
+                        <option value="option4" class="option-creality">Creality</option>
+                        <option value="option5" class="option-cinspire">Cinspire</option>
+                    </select>
+
+                </div>
+            </div>
+
+            <div class="horizontal-line"></div>
+
+            <div class="input-container">
+                <div class="ticket-label">
+                    <p class="in-title">Module</p>
+                    <p>Module on which issue happen</p>
+                </div>
+                <div class="ticket-input-section">
+
+                    <select class="ticket-select-input">
+                        <option value="option1">Select Product</option>
+                        <option value="option2">Option 2</option>
+                        <option value="option3">Option 3</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="horizontal-line"></div>
+
+            <div class="save-buttons-section">
+                <div>
+                    <input type="submit" value="submit">
+                    <input type="reset" value="reset">
+                </div>
+            </div>
+
+
+        
+    
+    
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../script.js"></script>
+
+</body>
+
+
+</html>
